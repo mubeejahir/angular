@@ -1,0 +1,16 @@
+<ul>
+    <li *ngFor= "let student of students">
+        Name: {{student.name}}<br>
+        Age: {{student.age}}<br>
+        Class: {{student.class}}<br>
+        Section: {{student.section}}<br>
+    </li>
+</ul>
+
+<form action="">
+    <input type="text" name=""  placeholder="Name" #name><br>
+    <input type="text" name=""  placeholder="Age" #age><br>
+    <input type="text" name=""  placeholder="Class" #class><br>
+    <input type="text" name=""  placeholder="Section" #section><br>
+    <input type="button" name="" value="click" (click)="addStudent(name.value, age.value, class.value,section.value)">
+</form>
